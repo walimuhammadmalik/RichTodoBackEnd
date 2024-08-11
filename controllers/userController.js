@@ -4,10 +4,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { verifyToken, generateToken } = require("../utils/jwt");
 const { check, validationResult } = require("express-validator");
-// const { Op } = require("sequelize");
-// const crypto = require('crypto');
-// const nodemailer = require('nodemailer');
-// const { JWT_SECRET } = process.env;
 const User = db.user;
 
 //1. post a user with email, name and password and also add validation and sanitization
