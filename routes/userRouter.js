@@ -2,10 +2,8 @@
 const express = require("express");
 const userRouter = express();
 const userController = require("../controllers/userController.js");
-// const { authenticate } = require("../middleware/auth");
 const auth = require("../middleware/auth");
 const passport = require("../middleware/passports");
-// require("../middleware/passports")(passport);
 // Example route that uses passport for authentication
 userRouter.get(
   "/protected",
@@ -40,6 +38,5 @@ userRouter.post(
   passport.authenticate("jwt", { session: false }),
   userController.resetPassUser
 ); //7
-// userRouter.get("/oneToMany", userController.oneToMany); //8
 
 module.exports = userRouter;
