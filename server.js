@@ -3,14 +3,12 @@ const express = require("express");
 const cors = require("cors");
 const session = require("express-session");
 const facebookPassport = require("./middleware/facebook-passport");
-require("./models/index");
+// require("./models/index");
 const bodyParser = require("body-parser");
 const authRoutes = require("./middleware/auth");
 const passport = require("passport");
 
-
 const db = require("./models/index");
-
 const app = express();
 
 // parse application/json
