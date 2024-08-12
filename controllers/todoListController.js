@@ -85,7 +85,7 @@ const getAll = (req, res) => {
     });
 };
 
-//4. find all todoLists againt loggined user with pagination
+//3. find all todoLists againt loggined user with pagination
 const getAllPagination = (req, res) => {
   const limit = +req.query.limit || 20;
   const offset = +req.query.offset || 10;
