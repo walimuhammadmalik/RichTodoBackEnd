@@ -6,7 +6,6 @@ const facebookPassport = require("./middleware/facebook-passport");
 require("./models/index");
 const bodyParser = require("body-parser");
 const authRoutes = require("./middleware/auth");
-// const fbUserRouter = require("./routes/fbUserRouter");
 const passport = require("passport");
 
 
