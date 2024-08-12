@@ -10,7 +10,6 @@ const authRoutes = require("./middleware/auth");
 // const fbUserRouter = require("./routes/fbUserRouter");
 const passport = require("passport");
 
-// const todolistController = require("./controllers/todolistController");
 
 const db = require("./models/index");
 
