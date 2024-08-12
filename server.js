@@ -5,7 +5,6 @@ const session = require("express-session");
 const facebookPassport = require("./middleware/facebook-passport");
 require("./models/index");
 const bodyParser = require("body-parser");
-// const { PASSWORD } = require("./config/dbConfig");
 const authRoutes = require("./middleware/auth");
 // const fbUserRouter = require("./routes/fbUserRouter");
 const passport = require("passport");
